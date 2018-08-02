@@ -3,7 +3,7 @@
 
 v1.0.0 - Add StickyHeaderItemDecoration
 ## Feature 
-##### RecyclerView Sticky Header 
+##### StickyHeaderItemDecoration 
 ![](https://github.com/siwarats/recyclerview-itemdecoration/blob/master/sticky_header_preview.gif)
 
 ## Add to your project
