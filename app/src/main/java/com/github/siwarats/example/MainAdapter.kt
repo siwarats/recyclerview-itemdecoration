@@ -1,4 +1,4 @@
-package com.github.siwarats.itemdecoration
+package com.github.siwarats.example
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
