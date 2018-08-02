@@ -1,7 +1,6 @@
 # recyclerview-itemdecoration
 [![](https://jitpack.io/v/siwarats/recyclerview-itemdecoration.svg)](https://jitpack.io/#siwarats/recyclerview-itemdecoration)
 
-v1.0.0 - Add StickyHeaderItemDecoration
 ## Feature 
 ##### StickyHeaderItemDecoration 
 ![](https://github.com/siwarats/recyclerview-itemdecoration/blob/master/sticky_header_preview.gif)
