@@ -1,20 +1,21 @@
-package com.github.siwarats.example
+package com.github.siwarats.example.sticky
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
+import com.github.siwarats.example.R
 import com.github.siwarats.itemdecoration.stickyheader.StickyHeaderItemDecoration
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_sticky.*
 
-class MainActivity : AppCompatActivity() {
+class StickyActivity : AppCompatActivity() {
 
     //Adapter Items
     private val objects = arrayListOf<Any>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_sticky)
 
         //Mock data
         for (header in 0..100) {
@@ -25,9 +26,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         //Setup RecyclerView
-        rcvMain?.adapter = MainAdapter(objects)
-        rcvMain?.layoutManager = LinearLayoutManager(this)
-        rcvMain?.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
-        rcvMain?.addItemDecoration(StickyHeaderItemDecoration())
+        rcvSticky?.adapter = StickyAdapter(objects)
+        rcvSticky?.layoutManager = LinearLayoutManager(this)
+        rcvSticky?.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
+        rcvSticky?.addItemDecoration(StickyHeaderItemDecoration())
     }
 }

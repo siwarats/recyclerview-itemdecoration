@@ -5,10 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.github.siwarats.example.main.MainActivity">
+    tools:context="com.github.siwarats.example.sticky.StickyActivity">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rcvMain"
+        android:id="@+id/rcvSticky"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
