@@ -2,6 +2,9 @@
 [![](https://jitpack.io/v/siwarats/recyclerview-itemdecoration.svg)](https://jitpack.io/#siwarats/recyclerview-itemdecoration)
 
 v1.0.0 - Add StickyHeaderItemDecoration
+## Feature 
+##### RecyclerView Sticky Header 
+![](https://github.com/siwarats/recyclerview-itemdecoration/blob/master/sticky_header_preview.gif)
 
 ## Add to your project
 Step 1. Add the JitPack repository to your build file
