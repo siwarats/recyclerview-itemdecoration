@@ -24,7 +24,7 @@ dependencies {
 ```
 
 ## How to use
-###### StickyHeaderItemDecoration
+##### StickyHeaderItemDecoration
 ```
 //Add StickyHeaderItemDecoration to your RecyclerView
 recyclerView?.addItemDecoration(StickyHeaderItemDecoration())
