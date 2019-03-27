@@ -1,15 +1,14 @@
 package com.github.siwarats.itemdecoration.stickyheader
 
 import android.graphics.Canvas
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
 
 class StickyHeaderItemDecoration : RecyclerView.ItemDecoration() {
 
-    override fun onDrawOver(c: Canvas?, parent: RecyclerView?, state: RecyclerView.State?) {
-        c ?: return
-        val topChild = parent?.getChildAt(0) ?: return
+    override fun onDrawOver(c: Canvas, parent: RecyclerView, state: RecyclerView.State) {
+        val topChild = parent.getChildAt(0) ?: return
         val topChildPosition = parent.getChildAdapterPosition(topChild)
         val header = createHeaderView(topChildPosition, parent)
                 ?: createPreviousHeaderView(topChildPosition, parent)
@@ -59,7 +58,7 @@ class StickyHeaderItemDecoration : RecyclerView.ItemDecoration() {
         if (itemCount <= 1) {
             return null
         }
-        val visibleCount = parent.layoutManager.childCount
+        val visibleCount = parent.layoutManager?.childCount ?: return null
         for (i in 1..visibleCount) {
             val header = parent.getChildAt(i)
             if (header != null && parent.getChildViewHolder(header) as? StickyViewHolder != null) {
