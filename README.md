@@ -17,8 +17,13 @@ allprojects {
 ```
 Step 2. Add the dependency
 ```
+//If used old support library
 dependencies {
     implementation 'com.github.siwarats:recyclerview-itemdecoration:1.0.1'
+}
+//If used AndroidX
+dependencies {
+    implementation 'com.github.siwarats:recyclerview-itemdecoration:2.0.0'
 }
 ```
 
